@@ -1,0 +1,159 @@
+/* Reset styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+/* Styling the header */
+header {
+    background-image: url('https://cdn.britannica.com/17/83817-050-67C814CD/Mount-Everest.jpg');
+    background-size: cover;
+    background-position: center;
+    color: blue;
+    font-size: larger;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: khaki;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+
+section {
+    padding: 40px;
+}
+
+section h2 {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#home.hero {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+#home.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+
+.menu {
+    background-color: #cfcaca;
+}
+
+.category {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: blue;
+}
+
+.category h3, .category h4, .category h5, .category h6, .category h7 {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: blue;
+}
+
+/* Styling the images */
+img {
+    float: right;
+    margin-left: 20px;
+    max-width: 50%; /* Adjust image width as needed */
+}
+
+/* Styling the figures */
+figure {
+    margin: 0;
+    text-align: right;
+}
+
+
+.location {
+    background-color: #f2f2f2;
+}
+
+.contact form, .reservation form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+
+.contact form label, .reservation form label {
+    font-weight: bold;
+    font-size: 16px;
+    color: blue;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea,
+.reservation form input[type="text"],
+.reservation form input[type="email"],
+.reservation form input[type="tel"],
+.reservation form input[type="date"],
+.reservation form input[type="time"],
+.reservation form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.contact form button,
+.reservation form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form button:hover,
+.reservation form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

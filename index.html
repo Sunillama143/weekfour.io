@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Restaurant- Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>A1 Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h2>Welcome to A1 Restaurant</h2>
+        <p>Yummy and Healthy food at Reasonable Price!!</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>OUR MENU</h2>
+        <div class="category">
+            <h3>APPETIZERS</h3>
+            <table>
+                <tr>
+                    <td><img src="samosa.webp" width="200" height="150"></td>
+                    <td>
+                        <ul>
+                            <li>fruit salad- NRs 150</li>
+                            <li>Samosa - NRs 50</li>
+                            <li>French fries - NRs 80</li>
+                            <li>Sadheko Chauchau- NRs 100</li>
+                            <li> Pagauda- NRs 50</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="category">
+            <h4>KHANA SET</h4>
+            <table>
+                <tr>
+                    <td><img src="thakali khana set.jpg" width="200" height="150"></td>
+                    <td>
+                        <ul>
+                            <li>Thakali khana set- NRs1000</li>
+                            <li>chicken khana set- NRs 450</li>
+                            <li>Mutton khana- NRs 600</li>
+                            <li>Plain khana set- NRs 300</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="category">
+            <h5>MOMO</h5>
+            <table>
+                <tr>
+                    <td><img src="momo.jpg"  width="200" height="150"></td>
+                    <td>
+                        <ul>
+                            <li>Chicken momo NRs 220</li>
+                            <li>Buff momo NRs 200</li>
+                            <li>Veg Momo NRs 150</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="category">
+            <h6>CHOWMEIN</h6>
+            <table>
+                <tr>
+                    <td><img src="chaumen.jpg" width="200" height="150"></td>
+                    <td>
+                        <ul>
+                            <li>Chicken Chowmein- NRs 150</li>
+                            <li>Buff Chowmein - NRs 150</li>
+                            <li>Veg Chowmein- NRs 150</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="category">
+            <h7>BEVERAGES</h7>
+            <table>
+                <tr>
+                    <td><img src="cold drinks.jpg"  width="200" height="150"></td>
+                    <td>
+                        <ul>
+                            <li>Coke- NRs 80</li>
+                            <li>Fanta - NRs 80</li>
+                            <li>Sprite- NRs 80</li>
+                            <li>Lassi - NRs 120</li>
+                            <li>Lemon Juice - NRs 120</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="category">
+            <h7>DESSERT</h7>
+            <table>
+                <tr>
+                    <td><img src="dessert.jpg"  width="200" height="150"></td>
+                    <td>
+                        <ul>
+                            <li>A1 special dessert- NRs 200</li>
+                            <li>Rasbari- NRs 160</li>
+                            <li>Ice-cream- NRs 140</li>
+                            <li>Cake- NRs 100</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <h2>Location</h2>
+        <div>
+            <p>Address: A1 Restaurant, Kathmandu, Nepal</p>
+            <p>Phone: </p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <h2>Make a Reservation</h2>
+        <form action="submit_reservation_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="message">Special Requests:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>A1 Restaurant</p>
+    </footer>
+</body>
+</html>
